@@ -1,3 +1,10 @@
+---
+grand_parent: SDCARD Bootloader Applications
+parent: SDCARD Bootloader
+title: Building and Running on SAM E70 Xplained Ultra Evaluation Kit
+has_toc: false
+---
+
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
 # Building and Running the SDCARD Bootloader applications
