@@ -169,6 +169,14 @@
       </logicalFolder>
       <itemPath>../src/app.h</itemPath>
     </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="true">
+      <itemPath>Makefile</itemPath>
+      <itemPath>../src/config/sam_l22_xpro/harmony.prj</itemPath>
+      <itemPath>../src/config/sam_l22_xpro/sam_l22_xpro.xml</itemPath>
+      <itemPath>../../../../../../mhc/../bootloader_apps_sdcard/apps/sdcard_bootloader/bootloader/firmware/src/config/sam_l22_xpro/sam_l22_xpro.xml</itemPath>
+    </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
                    projectFiles="true">
@@ -261,13 +269,6 @@
       <itemPath>../src/main.c</itemPath>
       <itemPath>../src/app.c</itemPath>
     </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="false">
-      <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/sam_l22_xpro/harmony.prj</itemPath>
-      <itemPath>../src/config/sam_l22_xpro/sam_l22_xpro.xml</itemPath>
-    </logicalFolder>
   </logicalFolder>
   <sourceRootList>
     <Elem>../src</Elem>
@@ -286,8 +287,8 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
         <pack name="SAML22_DFP" vendor="Microchip" version="3.3.47"/>
+        <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -502,8 +503,6 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-3ffff"/>
         <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoFilePath"
-                  value="E:/projects/h3_bootloader/bootloader_apps_sdcard/apps/sdcard_bootloader/bootloader/firmware/sam_l22_xpro.X/debug/sam_l22_xpro/sam_l22_xpro_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
