@@ -219,7 +219,7 @@
       <itemPath>../src/config/sam_e54_xpro/harmony.prj</itemPath>
       <itemPath>../../../../../../mhc/../core/apps/fs/sdmmc_fat/firmware/src/config/sam_e54_xpro/sam_e54_xpro.xml</itemPath>
       <itemPath>../src/config/sam_e54_xpro/sam_e54_xpro.xml</itemPath>
-      <itemPath>../src/config/sam_e54_xpro/harmony.prj</itemPath>
+      <itemPath>../../../../../../mhc/../bootloader_apps_sdcard/apps/sdcard_bootloader/bootloader/firmware/src/config/sam_e54_xpro/sam_e54_xpro.xml</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
