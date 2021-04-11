@@ -77,7 +77,7 @@
 /*** DEVCFG1 ***/
 #pragma config FNOSC =      SPLL
 #pragma config DMTINTV =    WIN_127_128
-#pragma config FSOSCEN =    ON
+#pragma config FSOSCEN =    OFF
 #pragma config IESO =       ON
 #pragma config POSCMOD =    EC
 #pragma config OSCIOFNC =   OFF
@@ -172,6 +172,7 @@ const DRV_SDMMC_INIT drvSDMMC0InitData =
     .isWriteProtectCheckEnabled     = false,
     .speedMode                      = DRV_SDMMC_CONFIG_SPEED_MODE_IDX0,
     .busWidth                       = DRV_SDMMC_CONFIG_BUS_WIDTH_IDX0,
+	.sleepWhenIdle 					= false,
     .isFsEnabled                    = true,
 };
 
@@ -324,9 +325,9 @@ void SYS_Initialize ( void* data )
         run_Application();
     }
 
-    CORETIMER_Initialize();
 	SDHC_Initialize();
 
+    CORETIMER_Initialize();
 	BSP_Initialize();
     NVM_Initialize();
 
