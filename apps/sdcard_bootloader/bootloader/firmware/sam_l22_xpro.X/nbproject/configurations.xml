@@ -22,6 +22,11 @@
             <itemPath>../src/config/sam_l22_xpro/driver/driver.h</itemPath>
             <itemPath>../src/config/sam_l22_xpro/driver/driver_common.h</itemPath>
           </logicalFolder>
+          <logicalFolder name="f6" displayName="osal" projectFiles="true">
+            <itemPath>../src/config/sam_l22_xpro/osal/osal.h</itemPath>
+            <itemPath>../src/config/sam_l22_xpro/osal/osal_definitions.h</itemPath>
+            <itemPath>../src/config/sam_l22_xpro/osal/osal_impl_basic.h</itemPath>
+          </logicalFolder>
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
             <logicalFolder name="f5" displayName="clock" projectFiles="true">
               <itemPath>../src/config/sam_l22_xpro/peripheral/clock/plib_clock.h</itemPath>
@@ -45,9 +50,9 @@
               <itemPath>../src/config/sam_l22_xpro/peripheral/port/plib_port.h</itemPath>
             </logicalFolder>
             <logicalFolder name="f1" displayName="sercom" projectFiles="true">
-              <logicalFolder name="f1" displayName="spim" projectFiles="true">
-                <itemPath>../src/config/sam_l22_xpro/peripheral/sercom/spim/plib_sercom3_spi.h</itemPath>
-                <itemPath>../src/config/sam_l22_xpro/peripheral/sercom/spim/plib_sercom_spi_common.h</itemPath>
+              <logicalFolder name="f1" displayName="spi_master" projectFiles="true">
+                <itemPath>../src/config/sam_l22_xpro/peripheral/sercom/spi_master/plib_sercom3_spi_master.h</itemPath>
+                <itemPath>../src/config/sam_l22_xpro/peripheral/sercom/spi_master/plib_sercom_spi_master_common.h</itemPath>
               </logicalFolder>
             </logicalFolder>
             <logicalFolder name="f9" displayName="tc" projectFiles="true">
@@ -102,12 +107,10 @@
           <itemPath>../src/config/sam_l22_xpro/definitions.h</itemPath>
           <itemPath>../src/config/sam_l22_xpro/user.h</itemPath>
           <itemPath>../src/config/sam_l22_xpro/configuration.h</itemPath>
+          <itemPath>../src/config/sam_l22_xpro/interrupts.h</itemPath>
+          <itemPath>../src/config/sam_l22_xpro/device_vectors.h</itemPath>
+          <itemPath>../src/config/sam_l22_xpro/device.h</itemPath>
         </logicalFolder>
-      </logicalFolder>
-      <logicalFolder name="f3" displayName="osal" projectFiles="true">
-        <itemPath>../src/config/sam_l22_xpro/osal/osal.h</itemPath>
-        <itemPath>../src/config/sam_l22_xpro/osal/osal_definitions.h</itemPath>
-        <itemPath>../src/config/sam_l22_xpro/osal/osal_impl_basic.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="packs" projectFiles="true">
         <logicalFolder name="f1" displayName="ATSAML22N18A_DFP" projectFiles="true">
@@ -142,12 +145,49 @@
             <itemPath>../src/packs/ATSAML22N18A_DFP/component/usb.h</itemPath>
             <itemPath>../src/packs/ATSAML22N18A_DFP/component/wdt.h</itemPath>
           </logicalFolder>
+          <logicalFolder name="f3" displayName="instance" projectFiles="true">
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/ac.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/adc.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/aes.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/ccl.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/dmac.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/dsu.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/eic.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/evsys.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/freqm.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/gclk.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/mclk.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/mtb.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/nvmctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/osc32kctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/oscctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/pac.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/pm.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/port.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/ptc.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/rstc.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/rtc.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/sercom0.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/sercom1.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/sercom2.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/sercom3.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/sercom4.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/sercom5.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/slcd.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/supc.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/tc0.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/tc1.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/tc2.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/tc3.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/tcc0.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/trng.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/usb.h</itemPath>
+            <itemPath>../src/packs/ATSAML22N18A_DFP/instance/wdt.h</itemPath>
+          </logicalFolder>
           <logicalFolder name="f2" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/ATSAML22N18A_DFP/pio/saml22n18a.h</itemPath>
           </logicalFolder>
-          <itemPath>../src/packs/ATSAML22N18A_DFP/device.h</itemPath>
-          <itemPath>../src/packs/ATSAML22N18A_DFP/atsaml22n18a_compat.h</itemPath>
-          <itemPath>../src/packs/ATSAML22N18A_DFP/atsaml22n18a.h</itemPath>
+          <itemPath>../src/packs/ATSAML22N18A_DFP/saml22n18a.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="CMSIS" projectFiles="true">
           <logicalFolder name="f1" displayName="CMSIS" projectFiles="true">
@@ -162,6 +202,7 @@
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/core_cm0plus.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/mpu_armv7.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
@@ -172,14 +213,36 @@
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="true">
+      <logicalFolder name="f1" displayName="sam_l22_xpro.mhc" projectFiles="true">
+        <itemPath>../src/config/sam_l22_xpro/sam_l22_xpro.mhc/BSP_SAM_L22_Xplained_Pro.yml</itemPath>
+        <itemPath>../src/config/sam_l22_xpro/sam_l22_xpro.mhc/cmsis.yml</itemPath>
+        <itemPath>../src/config/sam_l22_xpro/sam_l22_xpro.mhc/core.yml</itemPath>
+        <itemPath>../src/config/sam_l22_xpro/sam_l22_xpro.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/sam_l22_xpro/sam_l22_xpro.mhc/drv_sdspi.yml</itemPath>
+        <itemPath>../src/config/sam_l22_xpro/sam_l22_xpro.mhc/evsys.yml</itemPath>
+        <itemPath>../src/config/sam_l22_xpro/sam_l22_xpro.mhc/file_system_bootloader.yml</itemPath>
+        <itemPath>../src/config/sam_l22_xpro/sam_l22_xpro.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/sam_l22_xpro/sam_l22_xpro.mhc/HarmonyCore.yml</itemPath>
+        <itemPath>../src/config/sam_l22_xpro/sam_l22_xpro.mhc/nvmctrl.yml</itemPath>
+        <itemPath>../src/config/sam_l22_xpro/sam_l22_xpro.mhc/pm.yml</itemPath>
+        <itemPath>../src/config/sam_l22_xpro/sam_l22_xpro.mhc/project.yml</itemPath>
+        <itemPath>../src/config/sam_l22_xpro/sam_l22_xpro.mhc/sercom3.yml</itemPath>
+        <itemPath>../src/config/sam_l22_xpro/sam_l22_xpro.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/sam_l22_xpro/sam_l22_xpro.mhc/sys_fs.yml</itemPath>
+        <itemPath>../src/config/sam_l22_xpro/sam_l22_xpro.mhc/sys_time.yml</itemPath>
+        <itemPath>../src/config/sam_l22_xpro/sam_l22_xpro.mhc/tc0.yml</itemPath>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/sam_l22_xpro/harmony.prj</itemPath>
-      <itemPath>../src/config/sam_l22_xpro/sam_l22_xpro.xml</itemPath>
-      <itemPath>../../../../../../mhc/../bootloader_apps_sdcard/apps/sdcard_bootloader/bootloader/firmware/src/config/sam_l22_xpro/sam_l22_xpro.xml</itemPath>
+      <itemPath>../src/config/sam_l22_xpro/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
                    projectFiles="true">
+      <logicalFolder name="f1" displayName="config" projectFiles="true">
+        <logicalFolder name="f1" displayName="sam_l22_xpro" projectFiles="true">
+          <itemPath>../src/config/sam_l22_xpro/ATSAML22N18A.ld</itemPath>
+        </logicalFolder>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -222,8 +285,8 @@
               <itemPath>../src/config/sam_l22_xpro/peripheral/port/plib_port.c</itemPath>
             </logicalFolder>
             <logicalFolder name="f1" displayName="sercom" projectFiles="true">
-              <logicalFolder name="f1" displayName="spim" projectFiles="true">
-                <itemPath>../src/config/sam_l22_xpro/peripheral/sercom/spim/plib_sercom3_spi.c</itemPath>
+              <logicalFolder name="f1" displayName="spi_master" projectFiles="true">
+                <itemPath>../src/config/sam_l22_xpro/peripheral/sercom/spi_master/plib_sercom3_spi_master.c</itemPath>
               </logicalFolder>
             </logicalFolder>
             <logicalFolder name="f9" displayName="tc" projectFiles="true">
@@ -309,6 +372,7 @@
       </compileType>
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeUseCleanTarget>false</makeUseCleanTarget>
         <makeCustomizationPreStep></makeCustomizationPreStep>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
         <makeCustomizationPostStep></makeCustomizationPostStep>
@@ -349,7 +413,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/sam_l22_xpro;../src/packs/ATSAML22N18A_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;../src/config/sam_l22_xpro/system/fs/fat_fs/file_system;../src/config/sam_l22_xpro/system/fs/fat_fs/hardware_access"/>
+                  value="../src;../src/config/sam_l22_xpro;../src/config/sam_l22_xpro/system/fs/fat_fs/file_system;../src/config/sam_l22_xpro/system/fs/fat_fs/hardware_access;../src/packs/ATSAML22N18A_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -424,7 +488,7 @@
         <property key="oXC32ld-extra-opts" value=""/>
         <property key="optimization-level" value=""/>
         <property key="preprocessor-macros"
-                  value="ROM_LENGTH=0x7400;RAM_ORIGIN=0x20000010;RAM_LENGTH=0x7ff0"/>
+                  value="RAM_LENGTH=0x7ff0;RAM_ORIGIN=0x20000010;ROM_LENGTH=0x7400"/>
         <property key="remove-unused-sections" value="true"/>
         <property key="report-memory-usage" value="false"/>
         <property key="serial-length" value=""/>
@@ -445,7 +509,8 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories" value=""/>
+        <property key="extra-include-directories"
+                  value="../src;../src/config/sam_l22_xpro;../src/config/sam_l22_xpro/system/fs/fat_fs/file_system;../src/config/sam_l22_xpro/system/fs/fat_fs/hardware_access;../src/packs/ATSAML22N18A_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
