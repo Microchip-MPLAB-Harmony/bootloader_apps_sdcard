@@ -52,7 +52,7 @@ To build the application, refer to the following table and open the project usin
     - Flow Control : None
 
 8. Copy the generated application binary file to a sdcard from the Host PC
-    - *\<harmony3_path\>\bootloader_apps_sdcard\apps\sdcard_bootloader\test_app\firmware\sam_e54_xpro.X\dist\sam_e54_xpro\production\sam_e54_xpro.X.production.bin*
+    - *\<harmony3_path\>/bootloader_apps_sdcard/apps/sdcard_bootloader/test_app/firmware/sam_e54_xpro.X/dist/sam_e54_xpro/production/sam_e54_xpro.X.production.bin*
 
 9. Rename the copied application binary file to **image.bin**
 
