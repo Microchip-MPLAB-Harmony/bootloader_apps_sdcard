@@ -12,7 +12,7 @@ To clone or download these application from Github,go to the [main page of this 
 
 # SDCARD Bootloader
 
-This example application shows how to use the Bootloader Library to bootload an application using SDCARD protocol.
+This example application shows how to use the File System Bootloader Library to bootload an application using SDCARD protocol.
 
 ### Bootloader Application
 
