@@ -11,6 +11,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: file_system_bootloader, value: 'false'}
+  - type: Integer
+    attributes: {id: NVM_RWS}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: efc, value: '6'}
 - type: Attachments
   children:
   - type: DirectCapability
