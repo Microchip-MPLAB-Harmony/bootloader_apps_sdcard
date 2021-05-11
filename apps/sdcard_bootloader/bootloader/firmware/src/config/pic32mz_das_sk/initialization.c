@@ -325,9 +325,9 @@ void SYS_Initialize ( void* data )
         run_Application();
     }
 
+    CORETIMER_Initialize();
 	SDHC_Initialize();
 
-    CORETIMER_Initialize();
 	BSP_Initialize();
     NVM_Initialize();
 
