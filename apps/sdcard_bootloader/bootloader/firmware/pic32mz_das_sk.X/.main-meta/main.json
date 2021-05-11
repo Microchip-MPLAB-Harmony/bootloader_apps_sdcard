@@ -39,13 +39,17 @@
 		"author": "Microchip",
 		"subcategories": [
 			[
-				"Development Kit", "PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto)"
+				"Development Kit",
+				"PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto)"
 			],
 			[
-				"Harmony", "Bootloader", "I2C"
+				"Harmony",
+				"Bootloader",
+				"SDCARD"
 			],
 			[
-				"Bootloader", "I2C"
+				"Bootloader",
+				"SDCARD"
 			]
 		],
 		"peripherals": [
