@@ -59,7 +59,7 @@ To build the application, refer to the following table and open the project usin
 
 10. Insert the micro sdcard with the application binary **image.bin** to the micro sdcard slot of the [IO1 Xplained Pro Extension Kit](https://www.microchip.com/developmenttools/ProductDetails/ATIO1-XPRO)
 
-11. Once the application is successfully programmed **LED1** should start blinking and you should see below output on the console
+11. Once the application is successfully programmed **LED0** should start blinking and you should see below output on the console
 
     ![output](./images/btl_sdcard_test_app_console_success.png)
 

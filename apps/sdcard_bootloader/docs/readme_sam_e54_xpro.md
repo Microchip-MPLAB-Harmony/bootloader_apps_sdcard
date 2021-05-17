@@ -58,7 +58,7 @@ To build the application, refer to the following table and open the project usin
 
 10. Insert the sdcard with the application binary **image.bin** to the sdcard slot on the device
 
-11. Once the application is successfully programmed **LED1** should start blinking and you should see below output on the console
+11. Once the application is successfully programmed **LED0** should start blinking and you should see below output on the console
 
     ![output](./images/btl_sdcard_test_app_console_success.png)
 
