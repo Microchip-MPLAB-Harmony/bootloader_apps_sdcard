@@ -8,6 +8,21 @@ nav_order: 99
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
+## SD Card Bootloader Applications Release v3.0.3
+
+- New **File System Bootloader** component is added in Bootloader v3.5.0 release. Reconfigured all SDCARD bootloader applications to use the new **File System Bootloader** component in MHC
+
+### Known Issues
+
+- No changes from v3.0.0
+
+### Development Tools
+
+* [MPLAB® X IDE v5.50](https://www.microchip.com/mplab/mplab-x-ide)
+* [MPLAB® XC32 C/C++ Compiler v3.00](https://www.microchip.com/mplab/compilers)
+* MPLAB® X IDE plug-ins:
+    * MPLAB® Harmony 3 Launcher v3.6.4 and above.
+
 ## SD Card Bootloader Applications Release v3.0.2
 
 - Added discover.microchip.com metadata
