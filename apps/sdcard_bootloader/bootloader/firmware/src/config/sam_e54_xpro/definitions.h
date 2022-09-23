@@ -51,7 +51,7 @@
 #include "peripheral/nvmctrl/plib_nvmctrl.h"
 #include "peripheral/evsys/plib_evsys.h"
 #include "driver/sdmmc/drv_sdmmc.h"
-#include "bootloader/bootloader.h"
+#include "bootloader/bootloader_sdcard.h"
 #include "peripheral/port/plib_port.h"
 #include "peripheral/clock/plib_clock.h"
 #include "peripheral/nvic/plib_nvic.h"
