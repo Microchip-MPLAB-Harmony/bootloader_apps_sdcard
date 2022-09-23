@@ -80,7 +80,7 @@ SYS_FS_Tasks();
     /* Maintain Device Drivers */
     DRV_SDSPI_Tasks(sysObj.drvSDSPI0);
 
-    bootloader_Tasks();
+    bootloader_SDCARD_Tasks();
 
 
 
