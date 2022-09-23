@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.bootloader_apps_sdcard_sdcard_bootloader_pic32mz_das_sk",
-		"version": "3.2.0",
+		"version": "3.1.0",
 		"displayName": "SDCARD Bootloader Example for PIC32MZ DA Family",
 		"projectName": "sdcard_bootloader_pic32mz_das_sk",
 		"shortDescription": "This example application shows how to use the Bootloader Library to bootload an application using SDCARD protocol.",
