@@ -49,7 +49,7 @@
 #include <stddef.h>
 #include <stdbool.h>
 #include "driver/sdmmc/drv_sdmmc.h"
-#include "bootloader/bootloader.h"
+#include "bootloader/bootloader_sdcard.h"
 #include "peripheral/clk/plib_clk.h"
 #include "peripheral/pio/plib_pio.h"
 #include "peripheral/nvic/plib_nvic.h"
