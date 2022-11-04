@@ -253,7 +253,7 @@
   },"42": {
     "doc": "Release notes",
     "title": "SD Card Bootloader Applications Release v3.1.0",
-    "content": "Development kit and demo application support . | The following table provides bootloader demo applications available for different development kits. | Product Family | Development Kits | SDCARD | . | SAM L22 | SAM L22 Xplained Pro Evaluation Kit | Yes | . | SAM D5x/E5x | SAM E54 Xplained Pro Evaluation Kit | Yes | . | SAM E70/S70/V70/V71 | SAM E70 Xplained Ultra Evaluation Kit | Yes | . | PIC32MZ DA | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | Yes | . | . Known Issues . | N/A | . Development Tools . | MPLAB® X IDE v6.00 | MPLAB® XC32 C/C++ Compiler v4.10 | MPLAB® X IDE plug-ins: . | MPLAB® Code Configurator (MCC) v5.1.17 | . | . ",
+    "content": "Development kit and demo application support . | The following table provides bootloader demo applications available for different development kits. | Product Family | Development Kits | SDCARD | . | SAM L22 | SAM L22 Xplained Pro Evaluation Kit | Yes | . | SAM D5x/E5x | SAM E54 Xplained Pro Evaluation Kit | Yes | . | SAM E70/S70/V70/V71 | SAM E70 Xplained Ultra Evaluation Kit | Yes | . | PIC32MZ DA | PIC32MZ Embedded Graphics with Stacked DRAM (DA) Starter Kit (Crypto) | Yes | . | . Known Issues . | N/A | . Development Tools . | MPLAB® X IDE v6.05 | MPLAB® XC32 C/C++ Compiler v4.20 | MPLAB® X IDE plug-ins: . | MPLAB® Code Configurator (MCC) v5.1.17 | . | . ",
     "url": "http://localhost:4000/bootloader_apps_sdcard/release_notes.html#sd-card-bootloader-applications-release-v310",
     "relUrl": "/release_notes.html#sd-card-bootloader-applications-release-v310"
   },"43": {
