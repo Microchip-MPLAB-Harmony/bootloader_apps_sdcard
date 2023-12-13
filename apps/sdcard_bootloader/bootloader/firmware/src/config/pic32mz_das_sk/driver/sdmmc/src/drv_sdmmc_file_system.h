@@ -1,23 +1,22 @@
-/*******************************************************************************
-  Interrupt System Service Mapping File
+/******************************************************************************
+  SDMMC Driver File System Interface Implementation
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    sys_int_mapping.h
+    drv_sdmmc_file_system.h
 
   Summary:
-    Interrupt System Service mapping file.
+    SDMMC Driver File System Interface Implementation
 
   Description:
-    This header file contains the mapping of the APIs defined in the API header
-    to either the function implementations or macro implementation or the
-    specific variant implementation.
+    This file registers the SDMMC Driver capabilities with the file system
+    interface.
 *******************************************************************************/
 
 //DOM-IGNORE-BEGIN
-/******************************************************************************
+/*******************************************************************************
 * Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
@@ -40,25 +39,39 @@
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
 //DOM-IGNORE-END
+#ifndef DRV_SDMMC_FILE_SYSTEM_H
+#define DRV_SDMMC_FILE_SYSTEM_H
+// *****************************************************************************
+// *****************************************************************************
+// Section: Include Files
+// *****************************************************************************
+// *****************************************************************************
 
-#ifndef SYS_INT_MAPPING_H
-#define SYS_INT_MAPPING_H
+#include "driver/sdmmc/drv_sdmmc.h"
+#include "system/fs/sys_fs_media_manager.h"
+
+// DOM-IGNORE-BEGIN
+#ifdef __cplusplus  // Provide C++ Compatibility
+    extern "C" {
+#endif
+// DOM-IGNORE-END
+// *****************************************************************************
+// *****************************************************************************
+// Section: Global objects
+// *****************************************************************************
+// *****************************************************************************
+
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: Interrupt System Service Mapping
+// Section: SDMMC Driver File system interface Routines
 // *****************************************************************************
 // *****************************************************************************
 
-/* MISRA C-2012 Rule 5.8 deviated:6 Deviation record ID -  H3_MISRAC_2012_R_5_8_DR_1 */
+void DRV_SDMMC_RegisterWithSysFs( const SYS_MODULE_INDEX drvIndex);
 
-#define SYS_INT_IsEnabled()                 ((bool)(_CP0_GET_STATUS() & 0x01))
-#define SYS_INT_SourceEnable( source )      EVIC_SourceEnable( source )
-#define SYS_INT_SourceIsEnabled( source )   EVIC_SourceIsEnabled( source )
-#define SYS_INT_SourceStatusGet( source )   EVIC_SourceStatusGet( source )
-#define SYS_INT_SourceStatusSet( source )   EVIC_SourceStatusSet( source )
-#define SYS_INT_SourceStatusClear( source ) EVIC_SourceStatusClear( source )
+#ifdef __cplusplus
+}
+#endif
 
-/* MISRAC 2012 deviation block end */
-
-#endif // SYS_INT_MAPPING_H
+#endif //#ifndef DRV_SDMMC_FILE_SYSTEM_H
