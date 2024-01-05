@@ -46,14 +46,14 @@ This example application shows how to use the File System Bootloader Library to 
 
 **Development Kits**<br />The following table provides links to documentation on how to build and run SDCARD bootloader on different development kits
 
--   **[PIC32MZ Embedded Graphics with Stacked DRAM \(DA\) Starter Kit \(Crypto\): Building and Running the SDCARD Bootloader applications](../../docs/GUID-E7B037AE-8CDD-4C80-8F07-DF4C46DB7059.md)**  
+-   **[PIC32MZ Embedded Graphics with Stacked DRAM \(DA\) Starter Kit \(Crypto\): Building and Running the SDCARD Bootloader applications](GUID-E7B037AE-8CDD-4C80-8F07-DF4C46DB7059.md)**  
 
--   **[SAM E54 Xplained Pro Evaluation Kit: Building and Running the SDCARD Bootloader applications](../../docs/GUID-EF78BCAB-61FC-4F86-9ED7-18A0C467F8DF.md)**  
+-   **[SAM E54 Xplained Pro Evaluation Kit: Building and Running the SDCARD Bootloader applications](GUID-EF78BCAB-61FC-4F86-9ED7-18A0C467F8DF.md)**  
 
--   **[SAM E70 Xplained Ultra Evaluation Kit: Building and Running the SDCARD Bootloader applications](../../docs/GUID-CC641FFA-6C81-4DA1-A898-2B8FEBD6995D.md)**  
+-   **[SAM E70 Xplained Ultra Evaluation Kit: Building and Running the SDCARD Bootloader applications](GUID-CC641FFA-6C81-4DA1-A898-2B8FEBD6995D.md)**  
 
--   **[SAM L22 Xplained Pro Evaluation Kit: Building and Running the SDCARD Bootloader applications](../../docs/GUID-A17DB6C3-2C40-4395-9F69-5F133D54A1DC.md)**  
+-   **[SAM L22 Xplained Pro Evaluation Kit: Building and Running the SDCARD Bootloader applications](GUID-A17DB6C3-2C40-4395-9F69-5F133D54A1DC.md)**  
 
 
-**Parent topic:**[MPLAB® Harmony 3 SDCARD Bootloader Application Examples](../../docs/GUID-E1BC6897-8F9B-44BA-9E80-06E0A27D73BD.md)
+**Parent topic:**[MPLAB® Harmony 3 SDCARD Bootloader Application Examples](GUID-E1BC6897-8F9B-44BA-9E80-06E0A27D73BD.md)
 
